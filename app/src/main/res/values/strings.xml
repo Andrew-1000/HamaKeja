@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HamaKeja</string>
+    <string name="toasty">Toasty</string>
+    <string name="looking_for_a_truck">Looking for a truck</string>
+    <string name="i_own_a_truck">I own a truck</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
