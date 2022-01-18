@@ -23,7 +23,6 @@ class PlaceholderFragment: Fragment() {
             setIndex(arguments?.getInt(ARG_SECTION_NUMBER)?: 3)
         }
 
-
     }
 
     override fun onCreateView(
