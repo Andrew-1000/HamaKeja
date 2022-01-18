@@ -4,28 +4,27 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.viewmodel.ktx.R
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.hamakeja.fragments.HomeFragment
+import com.example.hamakeja.fragments.TruckOwnerFragment
+import com.example.hamakeja.fragments.WantToMoveFragment
 
 
-private val TAB_TITLE = arrayOf(
-    com.example.hamakeja.R.string.owner,
-    com.example.hamakeja.R.string.start,
-    com.example.hamakeja.R.string.want_to_move,
-
-
-)
-class SectionsPagerAdapter(private val context: Context, fm: FragmentManager): FragmentPagerAdapter(fm){
-    override fun getCount(): Int {
+class SectionsPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle):FragmentStateAdapter(fragmentManager, lifecycle){
+    override fun getItemCount(): Int {
         return 3
     }
 
-    override fun getItem(position: Int): Fragment {
-        return PlaceholderFragment.newInstance(2)
-    }
+    override fun createFragment(position: Int): Fragment {
+        return when(position) {
+            0 -> TruckOwnerFragment()
+            1 -> HomeFragment()
+            2 -> WantToMoveFragment()
+            else -> HomeFragment()
 
-    override fun getPageTitle(position: Int): CharSequence? {
-        return context.resources.getString(TAB_TITLE[position])
+        }
     }
-
 
 }
