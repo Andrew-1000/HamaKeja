@@ -1,7 +1,6 @@
 package com.example.hamakeja.model;
 
 public class Truck {
-    private String truckId;
     private String truckNumber;
     private String parkedLocation;
     private String imageName;
@@ -54,6 +53,16 @@ public class Truck {
     }
 
     public void setCarryingCapacity(String carryingCapacity) {
+        this.carryingCapacity = carryingCapacity;
+    }
+
+
+    public Truck(String truckNumber, String parkedLocation, String imageName, String contactNumber, String overallSize, String carryingCapacity) {
+        this.truckNumber = truckNumber;
+        this.parkedLocation = parkedLocation;
+        this.imageName = imageName;
+        this.contactNumber = contactNumber;
+        this.overallSize = overallSize;
         this.carryingCapacity = carryingCapacity;
     }
 }
