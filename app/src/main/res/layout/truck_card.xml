@@ -25,7 +25,7 @@
                 android:layout_height="200dp">
 
                 <ImageView
-                    android:id="@+id/image2"
+                    android:id="@+id/truck_Image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitCenter"
@@ -52,19 +52,31 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:text="Buruburu"
+                    android:text="@string/buruburu"
                     android:textColor="@color/grey" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/overall_Size"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginStart="15dp"
-                    android:textColor="@color/grey"
                     android:layout_marginBottom="15dp"
-                    android:text="@string/dimensions" />
+                    android:text="@string/dimensions"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/carrying_Capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/parked_Location"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="179dp"
+                    android:layout_marginTop="132dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toEndOf="@+id/overall_Size"
+                    android:text="@string/cubed" />
 
             </RelativeLayout>
 
