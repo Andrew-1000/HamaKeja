@@ -11,4 +11,6 @@
     <string name="number">KCA 334Y</string>
     <string name="call">call</string>
     <string name="dimensions">6.01m x 2.34m x 2.69m</string>
+    <string name="cubed">37.83m³</string>
+    <string name="buruburu">Buruburu</string>
 </resources>
