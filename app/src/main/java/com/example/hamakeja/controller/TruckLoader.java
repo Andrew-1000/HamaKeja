@@ -14,7 +14,7 @@ import java.util.List;
 public class TruckLoader extends AsyncTaskLoader<List<Truck>> {
 
     private static final String LOG_TAG = TruckLoader.class.getName();
-    private String mUrl;
+    private final String mUrl;
 
 
     public TruckLoader(@NonNull Context context, String url) {
@@ -33,7 +33,6 @@ public class TruckLoader extends AsyncTaskLoader<List<Truck>> {
         if (mUrl == null) {
             return null;
         }
-        List<Truck> truckData = QueryUtils.fetchTruckData(mUrl);
-        return truckData;
+        return QueryUtils.fetchTruckData(mUrl);
     }
 }
