@@ -2,11 +2,9 @@ package com.example.hamakeja
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager.widget.PagerAdapter
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.hamakeja.databinding.ActivityHomeBinding
-import com.example.hamakeja.view.SectionsPagerAdapter
+import com.example.hamakeja.adapter.SectionsPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

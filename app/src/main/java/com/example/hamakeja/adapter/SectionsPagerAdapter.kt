@@ -1,4 +1,4 @@
-package com.example.hamakeja.view
+package com.example.hamakeja.adapter
 
 import android.content.Context
 import androidx.fragment.app.Fragment
