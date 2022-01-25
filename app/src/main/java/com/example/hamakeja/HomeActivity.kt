@@ -23,12 +23,7 @@ class HomeActivity : AppCompatActivity() {
             tab, position ->
             tab.text = tabTitle[position]
         }.attach()
-//        val sectionsPagerAdapter = SectionsPagerAdapter( supportFragmentManager, lifecycle)
-//        val viewPager: ViewPager = binding.viewPager
-//        val tabs: TabLayout = binding.tabs
-//        viewPager.adapter = sectionsPagerAdapter
 
-//        tabs.setupWithViewPager(viewPager)
         actionBar?.setSelectedNavigationItem(2)
 
     }
