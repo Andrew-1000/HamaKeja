@@ -22,11 +22,13 @@ public class TruckAdapter extends RecyclerView.Adapter<TruckAdapter.ViewHolder> 
     private List<Truck> mTruckList;
 
 
-    private TruckAdapter(Context context, List<Truck> truckList) {
+    public TruckAdapter(Context context, List<Truck> truckList) {
         mContext = context;
         mTruckList = truckList;
 
     }
+
+
 
     @NonNull
     @Override
