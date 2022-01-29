@@ -9,6 +9,7 @@ import androidx.lifecycle.viewmodel.ktx.R
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.hamakeja.fragments.HomeFragment
 import com.example.hamakeja.fragments.TruckOwnerFragment
+import com.example.hamakeja.fragments.WantToMoveFrag
 import com.example.hamakeja.fragments.WantToMoveFragment
 
 
@@ -21,7 +22,7 @@ class SectionsPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycl
         return when(position) {
             0 -> TruckOwnerFragment()
             1 -> HomeFragment()
-            2 -> WantToMoveFragment()
+            2 -> WantToMoveFrag()
             else -> HomeFragment()
 
         }
