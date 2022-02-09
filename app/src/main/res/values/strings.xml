@@ -12,6 +12,7 @@
     <string name="call">call</string>
     <string name="dimensions">6.01m x 2.34m x 2.69m</string>
     <string name="cubed">37.83m³</string>
-    <string name="buruburu">Buruburu</string>
+    <string name="buruburu">Upperhill</string>
     <string name="image">image</string>
+    <string name="api_key">7d06f2ccb4684321bb58dad3fc7c2b24</string>
 </resources>
